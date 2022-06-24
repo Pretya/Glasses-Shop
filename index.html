@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+
+    <title>Luxoptika</title>
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner">
+            <div class="header__up">
+
+                <div class="sign__img">
+                    <img src="./img/lk-ico.png" alt="">
+                </div>
+
+                <div class="sign__in">
+                    <button data-modal-link="modal-1">Мій кабінет</button>
+                </div>
+
+                <div class="modal modal__hidden" data-modal id="modal-1">
+
+                    <div class="modal__wrapper" >
+                        <div class="modal__window">
+                            <div class="modal__item">
+
+                                <div class="modal__title">
+                                    <h2>Вхід до особистого кабінету</h2>
+                                </div>
+
+                                <div class="modal__contact">
+                                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                                </div>
+
+                                <p>або</p>
+
+                                <div class="form">
+                                    <form action="">
+                                        <input type="text" placeholder="Email">
+                                        <input type="text" placeholder="Пароль">
+                                        <a href="">Забули пароль?</a>
+                                        <button>Увійти</button>
+                                    </form>
+                                </div>
+                             
+                                <div class="sign__up">
+                                    <div class="sign__text">Не реєструвалися?</div>
+                                    <a href="">Зареєструватися</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__content">
+
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+
+                <div class="header__phone">
+                    <div class="phone__icon">
+                        <span>0 800 30 98 97</span>
+                        <a href="">Передзвоніть мені</a>
+                    </div>
+                </div>
+
+                <div class="header__search">
+                    <form action="">
+                        <input class="header__input" type="text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+
+                <div class="record">
+                    <a href="">Запис до лікаря</a>
+                </div>
+
+                <div class="fav__bask">
+                    <div class="favoritse">
+                        <a href=""><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                    <div class="basket">
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__nav">
+                <nav class="nav__item">
+                    <ul class="nav__list">
+                        <li class="nav__link"><a class="nav__first" href="">Контактні лінзи</a></li>
+                        <li class="nav__link"><a href="">Оправи</a></li>
+                        <li class="nav__link"><a href="">Сонцезахисні окуляри</a></li>
+                        <li class="nav__link"><a href="">Лінзи для окулярів</a></li>
+                        <li class="nav__link"><a href="">Новини</a></li>
+                        <li class="nav__link"><a href="">Акції</a></li>
+                        <li class="nav__link"><a class="nav__link__kids" href="">Дітям</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+    </header>
+    <!-- /.Header -->
+    <!-- Main -->
+    <main>
+
+
+        <div class="conteiner">
+
+            <!-- Slider -->
+            <section class="slaider">
+                <div class="slider__wrapper">
+                    <div class="slider__sale">
+                        <div class="home__slider" id="slaider">
+                           <img class="slide-single" data-slaider-content id="slaider-1" src="./img/2.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-2" src="./img/sale3.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-3" src="./img/sale4.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-4" src="./img/sale5.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-5" src="./img/sale6.png" alt="">
+                        </div> 
+                        
+                        <div class="slider__pager">
+                            <ul>
+                                <li><button class="btn__hidden" data-slaider="slaider-1">1</button></li>
+                                <li><button data-slaider="slaider-2">2</button></li>
+                                <li><button data-slaider="slaider-3">3</button></li>
+                                <li><button data-slaider="slaider-4">4</button></li>
+                                <li><button data-slaider="slaider-5">5</button></li>
+                            </ul>
+                        </div>
+
+                     </div>
+                     <div class="slider__right">
+                       <img src="./img/photo-1562635357-977c8ed0b2ab.avif" alt="">
+                     </div>
+                </div>
+
+                  
+            </section>
+            <!-- /.Slider -->
+            <!-- Progress -->
+            <section class="our__progress">
+
+                  <div class="progress progress--one">
+                    <h2>222</h2>
+                    <p>Оптики по всій Україні - ми поруч!</p>
+                    <a href="">мережа оптик</a>
+                  </div>
+
+                  <div class="progress progress--two">
+                       <div class="two__numb">
+                          <h2>27</h2>
+                          <p>років</p>
+                       </div>
+                      <p>Ми з вами з 1994 року</p>
+                      <a href="">Про компанію</a>
+                  </div>
+
+                  <div class="progress progress--three">
+                    <div class="position__up">
+                        <h2>489</h2>
+                        <p>Фахівців піклуються про ваш зір</p>
+                        <a href="">Наші лікарі</a>
+                    </div>
+                  
+                  </div>
+
+                  <div class="progress progress--four">
+                    <h2>20 000+</h2>
+                      <p>Брендові оправи і сонцезахисних окулярів</p>
+                      <a href="">Всі бренди</a>
+                  </div>
+    
+            </section>
+            <!-- /.Proggress -->
+
+            <!-- Offers -->
+            <section class="offers">
+
+                <div class="one__offers one__offers--1">
+                    <img src="../luxoptika/img/offers1.webp" alt="">
+                    <div class="offers__desc">
+
+                        <h2>
+                            ПЕРЕВІРЯЙТЕ зір<br> у Люксоптиці
+                        </h2>
+
+                        <div class="offers__text">
+                            <p> Самолікування та невірно<br> поставлений діагноз можуть<br> нашкодити вашому здоров'ю</p>
+                           
+                        </div>
+
+                        <div class="offers__btn">
+                            <a href="">Записатись на перевірку</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="one__offers one__offers--2">
+                    <img src="./img/offers2.png" alt="">
+                    <div class="offers__desc">
+
+                        <h2>
+                            Апаратне лікування зору
+                        </h2>
+
+                        <div class="offers__text">
+                            Сучасний метод профілактики<br> й лікування різних захворювань<br> очей у дітей та дорослих
+                        </div>
+
+                        <div class="offers__btn">
+                            <a href="">Дінатись більше</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+            <!-- /.Offers -->
+
+            <!-- Tabs -->
+            <section class="tabs">
+                <h2>Топ продажів</h2>
+
+                <ul class="tabs__list">
+                    <li class="tabs__items tabs__hidden__underline" data-tab="tab-1">Контактні лінзи</li>
+                    <li class="tabs__items" data-tab="tab-2">Оправи</li>
+                    <li class="tabs__items" data-tab="tab-3">Сонцезахисні окуляри</li>
+                </ul>
+
+                <div class="tab__content" data-tab-content id="tab-1">
+
+                    <div class="tab__items">
+                        <img src="./img/lens1.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактные линзы  Air Optix plus HydraGlyde</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">630 грн</div>
+                           <div class="num__lens">За 3 шт.</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/lens2.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактные линзы  Biofinity</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">630 грн</div>
+                           <div class="num__lens">За 3 шт.</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/lens3.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактные линзы  Air Optix night&day aqua</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">828 грн</div>
+                           <div class="num__lens">За 3 шт.</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/lens4.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактні лінзи  Dailies Total 1</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">1080 грн</div>
+                           <div class="num__lens">За 30 шт.</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/lens5.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактні лінзи Air Optix plus HydraGlyde Multifocal</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">1107 грн</div>
+                           <div class="num__lens">За 3 шт.</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/lens6.jpg" alt="">
+                       <div class="tabs__title"><a href="">Контактні лінзи  AirOptix Colors</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">824 грн</div>
+                           <div class="num__lens">За 2 шт.</div>
+                       </div>
+                    </div>
+                    
+                </div>
+
+                <div class="tab__content tabs__hidden" data-tab-content id="tab-2">
+
+                    <div class="tab__items">
+                        <img src="./img/upload1.jpg" alt="">
+                       <div class="tabs__title"><a href="">Оправы RAY-BAN RX 3447V 2500 50</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">4 259 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <div class="tabs__items__pictures">
+                            <img src="./img/upload2.jpg" alt="">
+                            <div class="vob">
+                                <span>-30%</span>
+                            </div>
+                        </div>
+                       <div class="tabs__title"><a href="">Оправы CASTA Casta CST 824 GLDBK</a></div>
+                       <div class="tabs__price">
+                           <div class="was__lens__price">1 199 грн</div>
+                           <div class="now__lens__price">839.30 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/upload3.jpg" alt="">
+                       <div class="tabs__title"><a href="">Оправы RAY-BAN RX 7074 5364 52</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">3 669 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/upload4.jpg" alt="">
+                       <div class="tabs__title"><a href="">Оправы RAY-BAN RX 6489 2500 58</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">4 259 грн</div>                          
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/upload5.jpg" alt="">
+                       <div class="tabs__title"><a href="">Оправы LUXOPTICA LUXOPTICA LXO 0048 BK</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">599 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/upload6.jpg" alt="">
+                       <div class="tabs__title"><a href="">Оправы VOGUE VO 4011 352 51</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">2 909 грн</div>
+                       </div>
+                    </div>
+                    
+                </div>
+
+                <div class="tab__content tabs__hidden" data-tab-content id="tab-3">
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass1.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки RAY-BAN RB 3556N 001 53</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">4 789 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass2.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки RAY-BAN RB 3447N 002/71 53</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">5 119 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass3.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки RAY-BAN RB 4171 622/8G 54</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">4 459 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass4.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки RAY-BAN RB 2140 901 50</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">4 789 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass5.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки POLAROID PLD PLD 6061/F/S 80754M9</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">1 779 грн</div>
+                       </div>
+                    </div>
+
+                    <div class="tab__items">
+                        <img src="./img/sunglass6.jpg" alt="">
+                       <div class="tabs__title"><a href="">Солнцезащитные очки POLAROID PLD PLD 6060/S 2F757M9</a></div>
+                       <div class="tabs__price">
+                           <div class="now__lens__price">1 619 грн</div>
+                       </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+            <!-- /.Tabs -->
+
+            <!-- Brands -->
+            <section class="brands">
+                <div class="brands__wrap">
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/casta.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/furla.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/guess.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/polaroid.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/ray-ban.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/tom-ford.webp" alt="">
+                        </span>
+                    </div>
+
+                    <div class="brands__list">
+                        <a href=""></a>
+                        <span>
+                            <img src="./img/vogue.webp" alt="">
+                        </span>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- /.Brands -->
+
+            <section class="lenses">
+               
+                <div class="lenses__desc">
+                    <div class="lenses__title">Контактні лінзи</div>
+                    <div class="lenses__link">
+                      <a href="">Одноденні</a>
+                      <a href="">Щомісячні</a>
+                      <a href="">Мультифокальні</a>
+                      <a href="">Кольорові</a>
+                      <a href="">Торичні</a>
+                    </div>
+                </div>
+            </section>
+            <!-- /.Lenses -->
+
+            <!-- Tabs2 -->
+          <section class="tabs__2">
+            <h2>Оптичний блог</h2>
+
+            <ul class="tabs__list">
+                <li class="tabs__items tabs__hidden__underline" data-tabs="tabs-1">Всі публікації</li>
+                <li class="tabs__items" data-tabs="tabs-2">Дитячий зір</li>
+                <li class="tabs__items" data-tabs="tabs-3">Захворювання очей</li>
+                <li class="tabs__items" data-tabs="tabs-4">Контактні лінзи</li>
+                <li class="tabs__items" data-tabs="tabs-5">Оправи</li>
+            </ul>
+
+            <div class="tab__content" data-tabs-content id="tabs-1">
+
+                <div class="tab__items">
+                    <img src="./img/news1.png" alt="">
+                   <div class="tabs__title"><a href="">Окуляри «котяче око» — кому підійдуть і з чим їх носити</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">25.01.2022</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news2.png" alt="">
+                   <div class="tabs__title"><a href="">	Окуляри з оправою чи без: що краще вибрати	</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">25.01.2022</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news3.png" alt="">
+                   <div class="tabs__title"><a href="">Як зрозуміти, що окуляри підібрані неправильно?</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">13.09.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news4.png" alt="">
+                   <div class="tabs__title"><a href="">Як харчуватися, щоб очі були здорові?</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">09.09.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news5.png" alt="">
+                   <div class="tabs__title"><a href="">Окуляри Ray-Ban: як відрізнити підробку від оригіналу</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">18.06.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news6.png" alt="">
+                   <div class="tabs__title"><a href="">Як прибрати почервоніння очей</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">19.04.2021</div>
+                   </div>
+                </div>
+
+                
+                <div class="tab__items">
+                    <img src="./img/news7.webp" alt="">
+                   <div class="tabs__title"><a href="">WoW-Люксоптика: де працює майстер на всі окуляри</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">13.04.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news8.webp" alt="">
+                   <div class="tabs__title"><a href="">Онлайн-примірка окулярів на сайті Люксоптики — нереальна новинка для реальних покупок</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">08.04.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/news9.webp" alt="">
+                   <div class="tabs__title"><a href="">Іміджеві окуляри Casta в Люксоптиці</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">05.04.2021</div>
+                   </div>
+                </div>
+                
+            </div>
+
+            <div class="tab__content tabs__hidden" data-tabs-content id="tabs-2">
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog1.webp" alt="">
+                   <div class="tabs__title"><a href="">Методи корекції зору у дітей: окуляри, денні чи нічні лінзи?</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">11.01.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog2.webp" alt="">
+                   <div class="tabs__title"><a href="">Факти про дитячий зір</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog3.webp" alt="">
+                   <div class="tabs__title"><a href="">Сонцезахисні окуляри для дітей</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog4.webp" alt="">
+                   <div class="tabs__title"><a href="">Наскільки безпечно фотографувати дітей зі спалахом</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog5.webp" alt="">
+                   <div class="tabs__title"><a href="">Контактна корекція зору для дітей	</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/kids-blog6.webp" alt="">
+                   <div class="tabs__title"><a href="">Турбота про дитячий зір</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                
+            </div>
+
+            <div class="tab__content tabs__hidden" data-tabs-content id="tabs-3">
+
+                <div class="tab__items">
+                    <img src="./img/disease1.png" alt="">
+                   <div class="tabs__title"><a href="">Як прибрати почервоніння очей	</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">19.04.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/disease2.webp" alt="">
+                   <div class="tabs__title"><a href="">Апаратне лікування в Люксоптиці — «фітнес» для здоров’я очей дітей та дорослих</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">05.04.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/disease3.webp" alt="">
+                   <div class="tabs__title"><a href="">Пресбіопія</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/disease4.webp" alt="">
+                   <div class="tabs__title"><a href="">Чи потрібні контактні лінзи при косоокості</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/disease5.webp" alt="">
+                   <div class="tabs__title"><a href="">Короткозорість (міопія)</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/disease6.webp" alt="">
+                   <div class="tabs__title"><a href="">Діагностика глаукоми	</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+                
+            </div>
+
+            <div class="tab__content tabs__hidden" data-tabs-content id="tabs-4">
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses1.webp" alt="">
+                   <div class="tabs__title"><a href="">Як і коли змінювати розчин для контактних лінз?		</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">25.09.2020</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses2.webp" alt="">
+                   <div class="tabs__title"><a href="">Огляд кольорових контактних лінз</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.11.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses3.webp" alt="">
+                   <div class="tabs__title"><a href="">Огляд торичних контактних лінз	</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses4.webp" alt="">
+                   <div class="tabs__title"><a href="">Новинка: лінзи з градієнтним вмістом води</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses5.webp" alt="">
+                   <div class="tabs__title"><a href="">Типи контактних лінз</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/contact-linses6.webp" alt="">
+                   <div class="tabs__title"><a href="">Найпоширеніші міфи про контактнi лінзи</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+                
+            </div>
+
+            <div class="tab__content tabs__hidden" data-tabs-content id="tabs-5">
+
+                <div class="tab__items">
+                    <img src="./img/upload1.webp" alt="">
+                   <div class="tabs__title"><a href="">Іміджеві окуляри Casta в Люксоптиці</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">05.04.2021</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/upload2.webp" alt="">
+                   <div class="tabs__title"><a href="">Готові окуляри для читання в Люксоптиці!</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">19.02.2020</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/upload3.webp" alt="">
+                   <div class="tabs__title"><a href="">Оправи для чоловіків</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/upload4.webp" alt="">
+                   <div class="tabs__title"><a href="">Як вибрати оправу відповідно до типу обличчя?</a></div>
+                   <div class="tabs__price">
+                     
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/upload5.webp" alt="">
+                   <div class="tabs__title"><a href="">Матеріали для оправ</a></div>
+                   <div class="tabs__price">
+                       
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+
+                <div class="tab__items">
+                    <img src="./img/upload6.webp" alt="">
+                   <div class="tabs__title"><a href="">Вибір жіночої оправи</a></div>
+                   <div class="tabs__price">
+                      
+                       <div class="num__lens">14.08.2019</div>
+                   </div>
+                </div>
+                
+            </div>
+
+          </section>
+           <!-- /.Tabs2 -->
+
+            <!-- Subscribe -->
+            <section class="subscribe">
+
+                <img src="./img/subs-bg.jpg" alt="">
+
+                <div class="subs__items">
+                    <div class="subs__title">
+                        <h2>Ще більше цікавинок для вас!</h2>
+                    </div>
+                    <div class="subs__text">
+                        <p> Підписуйтесь на нашу розсилку та дізнавайтеся першими про акції та знижки, новинки та трендові моделі.</p>
+                        <p>Тут тільки корисна інформація для краси та здоров’я ваших очей.</p>
+                    </div>
+                    <form action="#">
+                        <input type="text" placeholder="Введіть ваш e-mail" name="">
+                        <button class="btn">Підписатись</button>
+                    </form>
+
+                    <label class="subs__in">
+                        <input type="checkbox" value="Y">
+                        
+                        <small>Даю згоду на обробку моїх персональних даних. Про мету обробки персональних даних проінформований(а)</small>
+                    </label>
+                </div>
+              
+            </section>
+            <!-- /.Subscribe -->
+
+        </div>
+        <!-- /.Conteiner -->
+       
+    </main>
+    <!-- /.Main -->
+
+    <footer>
+
+        <div class="footer__wrapper">
+
+            <div class="footer__top">
+            
+                <div class="contacts">
+     
+                     <div class="contacts__call">
+                        <div class="cont__title">Безкоштовні дзвінки по Україні</div>
+                        <div class="cont_num">
+                            <a href="tel:0 800 30 98 97">
+                                <img src="./img/foot-phone.svg" alt="">
+                            </a>
+                             <a href="tel:0 800 30 98 97">0 800 30 98 97</a>
+                        </div>
+                     </div>
+     
+                    <div class="works">
+                       <div class="cont__title">Графік роботи служби підтримки</div>
+                       <div class="works__item">
+                            <img src="./img/foot-time.svg" alt="">
+                            <div class="works__day">
+                                    <p>Пн-Пт:09:00 - 18:00</p>
+                                    <p>Сб-Нд:09:00 - 18:00</p>
+                                </div>
+                            </div>
+                      
+                    </div>
+     
+                    <div class="cont__soc">
+                       <div class="cont__title">Слідкуйте за нами</div>
+                       <div class="soc__icon">
+                          <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                          <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                          <a href=""><i class="fa-brands fa-youtube"></i></a>
+                       </div>
+                    </div>
+     
+                </div>
+     
+                <div class="help">
+                    <h2>Допомога</h2>
+                     <ul>
+                         <li><a href="">Перевірити зір Онлайн</a></li>
+                         <li><a href="">Оптичний блог</a></li>
+                         <li><a href="">Часто запитують</a></li>
+                         <li><a href="">Поставити запитання</a></li>
+                         <li><a href="">Залишити відгук</a></li>
+                         <li><a href="">Як зробити замовлення</a></li>
+                     </ul>
+                </div>
+     
+                <div class="info">
+                    <h2>Правова інйормація</h2>
+                     <ul>
+                         <li><a href="">Угода користувача</a></li>
+                         <li><a href="">Звітність</a></li>
+                         <li><a href="">Кодекс етики</a></li>
+                         <li><a href="">Політика конфіденційності</a></li>
+                         <li><a href="">Умови доставки і оплати</a></li>
+                         <li><a href="">Умови обміну/повернення</a></li>
+                         <li><a href="">Гарантія</a></li>
+                     </ul>
+                </div>
+     
+                <div class="cabinet">
+                    <h2>Особистий кабінет</h2>
+                 <div class="sign__in">
+                     <ul>
+                         <li><a href="">Вхід | Реєстрація</a></li>
+                     </ul>
+                 </div>
+                </div>
+     
+             </div>
+        </div>
+
+        <div class="bot__wrapper">
+            <div class="footer__bot">
+                <div class="footer__cards">
+                    <div class="cards__title">Приймаємо до оплати:</div>                
+                    <a href="">
+                        <img src="./img/visa.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/mastercard.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bot__logo">
+                <img src="./img/logo.svg" alt="">
+                <div class="copy"> © 2009-2022 Всі права захищені </div>
+            </div>
+        </div>
+    </footer>
+     <!-- modal -->
+  
+     <!-- /.Modal -->
+    <script src="../luxoptika/js/main.js"></script>
+</body>
+<!-- font-family: 'Montserrat', sans-serif; -->
+</html>
