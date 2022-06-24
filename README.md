@@ -1,3 +1,2 @@
-# Glasses-Shop
-- Магазин очков [pages](https://pretya.github.io/glasses-shop/)
+## Glasses-Shop
 - Адаптив до 576px
