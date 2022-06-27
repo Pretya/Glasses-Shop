@@ -93,9 +93,19 @@ linkModal.addEventListener('click', function(){
 
 } )
 
-modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(event){
-        
+modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(event){    
         event.stopPropagation();
-        
-       
      })
+
+     $(document).ready(function(){
+        $('.slider').slick({
+            arrows:false,
+            dots:true,
+            adaptiveHeight: true,
+            initialSlide: 0,
+            speed: 1500,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            variableWidth: true,        
+        });
+    })
