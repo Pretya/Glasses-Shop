@@ -96,6 +96,22 @@ linkModal.addEventListener('click', function(){
 modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(event){    
         event.stopPropagation();
      })
+ const linkPhoneModal = document.querySelector('[data-modal-phone]');
+     const modalPhoneWindow = document.querySelector('[data-phone]')
+     
+     linkPhoneModal.addEventListener('click',function(){
+        bodyOver.classList.add('overflow');
+        modalPhoneWindow.classList.remove('modal__hidden');
+
+        modalPhoneWindow.addEventListener('click', function(){
+            modalPhoneWindow.classList.add('modal__hidden');
+            bodyOver.classList.remove('overflow');
+        })
+     });
+
+     modalPhoneWindow.querySelector('.callback__window').addEventListener('click',function(event){
+        event.stopPropagation();
+     });
 
      $(document).ready(function(){
         $('.slider').slick({
