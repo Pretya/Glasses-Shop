@@ -17,12 +17,24 @@
     <header class="header">
         <div class="conteiner">
             <div class="header__up">
-
-                <div class="sign__img">
-                    <img src="./img/lk-ico.png" alt="">
+                <div class="up__items">
+                    <ul>
+                        <li><a href="">Про компанію</a></li>
+                        <li><a href="">Послуги</a></li>
+                        <li><a href="">Доставка і оплата</a></li>
+                        <li><a href="">Обмін і повернення</a></li>
+                        <li><a href="">Програми лояльності</a></li>
+                        <li><a href="">Лікарі</a></li>
+                        <li><a href="">Мережа оптик</a></li>
+                    </ul>
                 </div>
 
+               
+
                 <div class="sign__in">
+                    <div class="sign__img">
+                        <img src="./img/lk-ico.png" alt="">
+                    </div>
                     <button data-modal-link="modal-1">Мій кабінет</button>
                 </div>
 
@@ -71,9 +83,34 @@
                 <div class="header__phone">
                     <div class="phone__icon">
                         <span>0 800 30 98 97</span>
-                        <a href="">Передзвоніть мені</a>
+                        <a data-modal-phone="modal-phone">Передзвоніть мені</a>
                     </div>
                 </div>
+
+                <div class="modal__callback modal__hidden" data-phone id="modal-phone">
+
+                    <div class="callback__wrapper">
+
+                        <div class="callback__window">
+
+                            <div class="callback__header">
+                                <h2>Замовлення зворотного дзвінка</h2>
+                                <p>Вкажіть свії номер телефону і ми передзонимо якумога швидше</p>
+                            </div>
+
+                            <form action="">
+                                <input autocomplete="tel" type="tel" placeholder="3 80">
+                                <input autocomplete="given-name" type="string" placeholder="Им'я">
+                                <input autocomplete="family-name" type="string" placeholder="Прізвище">
+                                <button type="submit">Замовити дзвінок</button>
+                            </form>
+                            <div class="line">Green</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
                 <div class="header__search">
                     <form action="">
@@ -152,6 +189,33 @@
                 <img src="./img/photo-1562635357-977c8ed0b2ab.avif" alt="">
               </div>
             </section>
+            <!-- <section class="slaider">
+                <div class="slider__wrapper">
+                    <div class="slider__sale">
+                        <div class="home__slider" id="slaider">
+                           <img class="slide-single" data-slaider-content id="slaider-1" src="./img/2.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-2" src="./img/sale3.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-3" src="./img/sale4.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-4" src="./img/sale5.png" alt="">
+                           <img class="slide-single img__hidden" data-slaider-content id="slaider-5" src="./img/sale6.png" alt="">
+                        </div> 
+                        
+                        <div class="slider__pager">
+                            <ul>
+                                <li><button class="btn__hidden" data-slaider="slaider-1">1</button></li>
+                                <li><button data-slaider="slaider-2">2</button></li>
+                                <li><button data-slaider="slaider-3">3</button></li>
+                                <li><button data-slaider="slaider-4">4</button></li>
+                                <li><button data-slaider="slaider-5">5</button></li>
+                            </ul>
+                        </div>
+
+                     </div>
+                     <div class="slider__right">
+                       <img src="./img/photo-1562635357-977c8ed0b2ab.avif" alt="">
+                     </div>
+                </div>  
+            </section> -->
             <!-- /.Slider -->
             <!-- Progress -->
             <section class="our__progress">
@@ -193,7 +257,7 @@
             <section class="offers">
 
                 <div class="one__offers one__offers--1">
-                    <img src="./img/offers1.webp" alt="">
+                    <img src="../luxoptika/img/offers1.webp" alt="">
                     <div class="offers__desc">
 
                         <h2>
@@ -954,11 +1018,14 @@
             </div>
         </div>
     </footer>
-     
-      <script src="https://kit.fontawesome.com/6aea519dd5.js" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../luxoptika/js/slick.min.js"></script>
-      <script src="../luxoptika/js/main.js"></script>
+     <!-- modal -->
+  
+     <!-- /.Modal -->
+     <script src="https://kit.fontawesome.com/6aea519dd5.js" crossorigin="anonymous"></script>
+     <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="../luxoptika/js/slick.min.js"></script>
+     <script src="../luxoptika/js/main.js"></script>
 </body>
 <!-- font-family: 'Montserrat', sans-serif; -->
 </html>
