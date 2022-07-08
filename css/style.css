@@ -784,6 +784,12 @@ body .nav__list > li:hover .sub__menu {
        
     }
  }
+ @media (min-width:992px){
+    .modal__burger {
+        display: none;
+       
+    }
+ }
 /* /.Modal-burger */
 /* /.Nav */
 /* Main */
