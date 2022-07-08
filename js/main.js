@@ -21,7 +21,6 @@ const tabContent = document.querySelectorAll ('[data-tab-content]');
  });
 
  const tabsHeader = document.querySelectorAll ('[data-tabs]');
-
  const tabsContent = document.querySelectorAll ('[data-tabs-content]');
 
 // /.Tabs1
@@ -48,11 +47,7 @@ const tabContent = document.querySelectorAll ('[data-tab-content]');
 // Slaider
 
 const slaiderHeader = document.querySelectorAll ('[data-slaider]');
-
 const slaiderContent = document.querySelectorAll ('[data-slaider-content]');
-
-
-
 
 slaiderHeader.forEach(function(item){
     item.addEventListener('click', function(e){
@@ -72,31 +67,80 @@ slaiderHeader.forEach(function(item){
 });
 
 const linkModal = document.querySelector('[data-modal-link]');
+const linkModalFooter = document.querySelector('[data-modal-link-footer]');
+const linkModalDoctor = document.querySelector('[data-modal-link-doctor]');
+
 const modalWindow = document.querySelector('[data-modal]');
+const modalWindowFooter = document.querySelector('[data-modal-footer]');
+const modalWindowDoctor = document.querySelector('[data-modal-doctor]');
+
 const bodyOver = document.querySelector('body');
 
 
+// !==========Modal1
+    linkModal.addEventListener('click', function(e){
+        
+       
+
+        bodyOver.classList.add('overflow');
+    
+        modalWindow.classList.remove('modal__hidden');
+    
+        modalWindow.addEventListener('click', function(){
+            modalWindow.classList.add('modal__hidden');
+            bodyOver.classList.remove('overflow');
+        });
+      });
+
+    
+
+    // !==========Modal2
+
+      linkModalFooter.addEventListener('click', function(e){
+        
+       
+
+        bodyOver.classList.add('overflow');
+    
+        modalWindowFooter.classList.remove('modal__hidden');
+    
+        modalWindowFooter.addEventListener('click', function(){
+            modalWindowFooter.classList.add('modal__hidden');
+            bodyOver.classList.remove('overflow');
+        });
+      });
 
 
-linkModal.addEventListener('click', function(){
+    // !========Modal3
 
-    bodyOver.classList.add('overflow');
+    linkModalDoctor.addEventListener('click', function(){
+        console.log('Click!!!')
 
-    modalWindow.classList.remove('modal__hidden');
+        bodyOver.classList.add('overflow');
+        modalWindowDoctor.classList.remove('modal__hidden');
 
-  
+        modalWindowDoctor.addEventListener('click', function(){
+            modalWindowDoctor.classList.add('modal__hidden');
+            bodyOver.classList.remove('overflow');
+        });
+    });
 
-    modalWindow.addEventListener('click', function(){
-        modalWindow.classList.add('modal__hidden');
-        bodyOver.classList.remove('overflow');
-    })
 
-} )
+    modalWindowDoctor.querySelector('.modal__wrapper').addEventListener('click', function(event){
+        event.stopPropagation();    
+     });
+    
 
-modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(event){    
-        event.stopPropagation();
-     })
- const linkPhoneModal = document.querySelector('[data-modal-phone]');
+    modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(event){
+        event.stopPropagation();    
+     });
+    modalWindowFooter.querySelector('.modal__wrapper').addEventListener('click', function(event){
+        event.stopPropagation();    
+     });
+
+
+    //  
+     const linkPhoneModal = document.querySelector('[data-modal-phone]');
      const modalPhoneWindow = document.querySelector('[data-phone]')
      
      linkPhoneModal.addEventListener('click',function(){
@@ -112,7 +156,35 @@ modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(
      modalPhoneWindow.querySelector('.callback__window').addEventListener('click',function(event){
         event.stopPropagation();
      });
+   
+    // !Modal 4 burger
+    const linkModalBurger = document.querySelector('[data-modal-burger]');
+    
+    const windowModalBurger = document.querySelector('[data-phone-burger]');
+    const linkCabinetBurger = document.querySelector('[data-modal-cabinet-burger]');
+    console.log(linkCabinetBurger);
 
+    linkModalBurger.addEventListener('click', function(){
+        windowModalBurger.classList.toggle('modal__hidden');
+        bodyOver.classList.toggle('overflow');
+
+        linkCabinetBurger.addEventListener('click', function(){
+            console.log('Click!!!');
+            windowModalBurger.classList.add('modal__hidden');
+            modalWindow.classList.remove('modal__hidden');
+            bodyOver.classList.add('overflow');
+
+            modalWindow.addEventListener('click', function(){
+                modalWindow.classList.add('modal__hidden');
+                windowModalBurger.classList.remove('modal__hidden');
+                bodyOver.classList.toggle('overflow');
+            })
+        })
+
+    });
+
+
+    // ! Slider
      $(document).ready(function(){
         $('.slider').slick({
             arrows:false,
@@ -122,6 +194,55 @@ modalWindow.querySelector('.modal__wrapper').addEventListener('click', function(
             speed: 1500,
             autoplay: true,
             autoplaySpeed: 3500,
-            variableWidth: true,        
+            variableWidth: true,
+             
         });
-    })
+    });
+
+    // Burger-menu
+
+    const isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (
+                isMobile.Android() ||
+                isMobile.BlackBerry() ||
+                isMobile.iOS() ||
+                isMobile.Opera() ||
+                isMobile.Windows());
+        }
+    };
+    
+    if (isMobile.any()) {
+        document.body.classList.add('_touch');
+    } else {
+        document.body.classList.add('_pc');
+    }
+
+
+    const iconMenu = document.querySelector('.menu__icon');
+    const menuBody = document.querySelector('.nav__list');
+  
+
+
+if (iconMenu) {
+    
+    iconMenu.addEventListener('click', function() {
+        iconMenu.classList.toggle('_active')
+        menuBody.classList.toggle('_active')
+     })
+} 
