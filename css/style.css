@@ -183,6 +183,7 @@ main {
 .record a:hover {
     background-color: rgb(32, 124, 10);
     transition: all .6s;
+    cursor: pointer;
 }
 .modal__docotor {
     align-items: center;
