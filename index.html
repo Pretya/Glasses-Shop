@@ -38,38 +38,38 @@
                     <button data-modal-link="modal-1">Мій кабінет</button>
                 </div>
 
-                <div class="modal modal__hidden" data-modal id="modal-1">
+            </div>
+            <div class="modal modal__hidden" data-modal id="modal-1">
 
-                    <div class="modal__wrapper" >
-                        <div class="modal__window">
-                            <div class="modal__item">
+                <div class="modal__wrapper" >
+                    <div class="modal__window">
+                        <div class="modal__item">
 
-                                <div class="modal__title">
-                                    <h2>Вхід до особистого кабінету</h2>
-                                </div>
-
-                                <div class="modal__contact">
-                                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
-                                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                                </div>
-
-                                <p>або</p>
-
-                                <div class="form">
-                                    <form action="">
-                                        <input type="text" placeholder="Email">
-                                        <input type="text" placeholder="Пароль">
-                                        <a href="">Забули пароль?</a>
-                                        <button>Увійти</button>
-                                    </form>
-                                </div>
-                             
-                                <div class="sign__up">
-                                    <div class="sign__text">Не реєструвалися?</div>
-                                    <a href="">Зареєструватися</a>
-                                </div>
-
+                            <div class="modal__title">
+                                <h2>Вхід до особистого кабінету</h2>
                             </div>
+
+                            <div class="modal__contact">
+                                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                            </div>
+
+                            <p>або</p>
+
+                            <div class="form">
+                                <form action="">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Пароль">
+                                    <a href="">Забули пароль?</a>
+                                    <button>Увійти</button>
+                                </form>
+                            </div>
+                         
+                            <div class="sign__up">
+                                <div class="sign__text">Не реєструвалися?</div>
+                                <a href="">Зареєструватися</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,62 @@
                 </div>
 
                 <div class="record">
-                    <a href="">Запис до лікаря</a>
+                    <a data-modal-link-doctor="modal-3">Запис до лікаря</a> 
+                </div>
+
+                
+                <div class="modal__docotor modal__hidden" data-modal-doctor id="modal-3">
+
+                    <div class="modal__wrapper" >
+                        <div class="modal__window">
+                            <div class="modal__item">
+
+                                <div class="modal__title">
+                                    <h2>Запис на прийом до лікаря</h2>
+
+                                </div>
+
+                                <div class="modal__content">
+                                    
+                                    <label class="content__doctor">
+                                         <div class="radio">
+                                            <input type="radio">
+                                         </div>
+                                         <div class="doctor__text">
+                                            <h3>Обрати ликаря</h3>
+                                            <p>Для початку я хочу обрати лікаря</p>
+                                         </div>
+                                    </label>
+
+                                    <label class="content__adress">
+                                         <div class="radio">
+                                            <input type="radio">
+                                         </div>
+                                         <div class="adress__text">
+                                            <h3>Обрати адресу оптики</h3>
+                                            <p>Для початку я хочу обрати зручне розташування оптики</p>
+                                         </div>
+                                    </label>
+
+                                    <label class="content__kids">
+                                         <div class="radio">
+                                            <input type="radio">
+                                         </div>
+                                         <div class="kids__text">
+                                            <h3>Обрати послугу для себе або для дитини (3-18 років)</h3>
+                                            <p>Я хочу знайти дитячого лікаря або кабінет апаратного лікування для дитини, або перевірити свій зір та підібрати рецепт на окуляри чи контактні лінзи</p>
+                                         </div>
+                                    </label>
+
+                                </div>
+
+                               <div class="doctor__footer">
+                                <button class="btn__doctor">Продовжити</button>
+                               </div>                              
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="fav__bask">
@@ -133,16 +188,164 @@
                 </div>
 
             </div>
+            <!-- Nav -->
+
             <div class="header__nav">
+                <div data-modal-burger="modal-burger" class="menu__icon">
+                    <span></span>
+                </div>
+                    <div class="modal__burger modal__hidden" data-phone-burger id="modal-burger">
+
+                        <div class="burger__wrapper">
+    
+                            <div class="burger__window">
+
+                                <div class="burger__logo">
+                                    <img src="./img/logo.svg" alt="">
+                                </div>  
+    
+                                <div class="burger__nav">
+                                    <ul>
+                                        <li><a href="#" class="burger__link">Новини</a></li>
+                                        <li><a href="#" class="burger__link">Контактні лінзи</a></li>
+                                        <li><a href="#" class="burger__link">Оправи</a></li>
+                                        <li><a href="#" class="burger__link">Сонцезахисні окуляри</a></li>
+                                        <li><a href="#" class="burger__link">Засоби для догляду</a></li>
+                                        <li><a href="#" class="burger__link">Лінзи для окулярів</a></li>
+                                        <li><a href="#" class="burger__link">Подірункові сєртифікати</a></li>
+                                        <li><a href="#" class="burger__link">Оптичний блог</a></li>
+                                        <li><a href="#" class="burger__link">Новини</a></li>
+                                        <li><a href="#" class="burger__link">Акції</a></li>
+                                        <li><a href="#" class="burger__link">Запис до лікаря</a></li>
+                                        <li><a href="#" class="burger__link">Дітям</a></li>
+                                    </ul>
+                                </div>
+                                <div class="burger__sign">
+                                    <div class="burger__cabinet">
+                                        <div class="sign__img">
+                                            <img src="./img/lk-ico.png" alt="">
+                                        </div>
+                                        <button data-modal-cabinet-burger="modal-1">Мій кабінет</button>
+                                    </div>
+
+                                    <a href="tel:0800 30 98 97">0800 30 98 97</a>
+
+                                    <form action="#">
+                                        <input type="numb" placeholder="Ваш номер телефону">
+                                        <button>Передзвоніть мені</button>
+                                    </form>
+                                </div>
+
+                                <div class="burger__info">
+                                    <ul>
+                                        <li><a href="#" class="burger__link">Про компанію</a></li>
+                                        <li><a href="#" class="burger__link">Послуги</a></li>
+                                        <li><a href="#" class="burger__link">Доставка і оплата</a></li>
+                                        <li><a href="#" class="burger__link">Обмін і повернення</a></li>
+                                        <li><a href="#" class="burger__link">Програми лояльності</a></li>
+                                        <li><a href="#" class="burger__link">Лікарі</a></li>
+                                        <li><a href="#" class="burger__link">Мережа оптик</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                
                 <nav class="nav__item">
                     <ul class="nav__list">
-                        <li class="nav__link"><a class="nav__first" href="">Контактні лінзи</a></li>
-                        <li class="nav__link"><a href="">Оправи</a></li>
-                        <li class="nav__link"><a href="">Сонцезахисні окуляри</a></li>
-                        <li class="nav__link"><a href="">Лінзи для окулярів</a></li>
-                        <li class="nav__link"><a href="">Новини</a></li>
-                        <li class="nav__link"><a href="">Акції</a></li>
-                        <li class="nav__link"><a class="nav__link__kids" href="">Дітям</a></li>
+                        <li class="nav__link"><a class="menu__link nav__first" href="">Контактні лінзи</a></li>
+
+                        <li class="nav__link">
+                            
+                            <a class="menu__link" href="">Оправи</a>
+
+                            <div class="sub__menu">
+                              <ul class="nav__sub-list-top">
+                                <li>
+                                    <a href="#" class="menu__sub__link">
+                                        <i><img src="./img/nav1.svg" alt=""></i>
+                                    </a>
+                                    <span>Авіатори</span>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class="menu__sub-link">
+                                        <i><img src="./img/nav2.svg" alt=""></i>
+                                    </a>
+                                    <span>Квадратна</span>
+                                </li>
+                                <li>
+                                    <a href="" class="menu__sub-link">
+                                        <i><img src="./img/nav3.svg" alt=""></i>
+                                    </a>
+                                    <span>Кругла</span>
+                                </li>
+                                <li>
+                                    <a href="" class="menu__sub-link">
+                                        <i><img src="./img/nav4.svg" alt=""></i>
+                                    </a>
+                                    <span>Котяче око</span>
+                                </li>
+                                <li>
+                                    <a href="" class="menu__sub-link">
+                                        <i><img src="./img/nav5.svg" alt=""></i>
+                                    </a>
+                                    <span>Панто</span>
+                                </li>
+                            </ul>
+
+                            <div class="sub__menu-bot">
+                                <div class="sub__colection">
+                                    <h2>Колекція</h2>
+                                    <ul>
+                                        <li><a href="">2022</a></li>
+                                        <li><a href="">2021</a></li>
+                                        <li><a href="">2020</a></li>
+                                        <li><a href="">2019</a></li>
+                                        <li><a href="">2018</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub__brands">
+                                    <h2>Бренд</h2>
+                                    <ul>
+                                        <li><a href="">ray-ban</a></li>
+                                        <li><a href="">polaroid</a></li>
+                                        <li><a href="">casta</a></li>
+                                        <li><a href="">guess</a></li>
+                                        <li><a href="">luxoptica</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub_humans">
+                                    <h2>Стать</h2>
+                                    <ul>
+                                        <li><a href="">Чоловічі</a></li>
+                                        <li><a href="">Жіночі</a></li>
+                                        <li><a href="">Дитячі</a></li>
+                                        <li><a href="">Унісєкс</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub_access">
+                                    <div class="sub__sertificat">
+                                        <a href="#">Подарункові сєртифікати</a>
+                                    </div>
+                                    <div class="sub__accessori">
+                                        <a href="#">Аксесуари для окулярів</a>
+                                    </div>
+                                    <ul>
+                                        <li><a href="">Футляр</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                         </div>
+                        </li>
+                        <li class="nav__link"><a class="menu__link" href="">Сонцезахисні окуляри</a></li>
+                        <li class="nav__link"><a class="menu__link" href="">Лінзи для окулярів</a></li>
+                        <li class="nav__link"><a class="menu__link" href="">Новини</a></li>
+                        <li class="nav__link"><a class="menu__link" href="">Акції</a></li>
+                        <li class="nav__link"><a class="menu__link nav__link__kids" href="">Дітям</a></li>
                     </ul>
                 </nav>
             </div>
@@ -991,8 +1194,43 @@
                     <h2>Особистий кабінет</h2>
                  <div class="sign__in">
                      <ul>
-                         <li><a href="">Вхід | Реєстрація</a></li>
+                         <li><button data-modal-link-footer="modal-2">Вхід | Реєстрація</button></li>
                      </ul>
+                     <div class="modal__footer modal__hidden" data-modal-footer id="modal-2">
+
+                        <div class="modal__wrapper" >
+                            <div class="modal__window">
+                                <div class="modal__item">
+    
+                                    <div class="modal__title">
+                                        <h2>Вхід до особистого кабінету</h2>
+                                    </div>
+    
+                                    <div class="modal__contact">
+                                        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                                    </div>
+    
+                                    <p>або</p>
+    
+                                    <div class="form">
+                                        <form action="">
+                                            <input type="text" placeholder="Email">
+                                            <input type="text" placeholder="Пароль">
+                                            <a href="">Забули пароль?</a>
+                                            <button>Увійти</button>
+                                        </form>
+                                    </div>
+                                 
+                                    <div class="sign__up">
+                                        <div class="sign__text">Не реєструвалися?</div>
+                                        <a href="">Зареєструватися</a>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>
                 </div>
      
@@ -1018,9 +1256,7 @@
             </div>
         </div>
     </footer>
-     <!-- modal -->
-  
-     <!-- /.Modal -->
+   
      <script src="https://kit.fontawesome.com/6aea519dd5.js" crossorigin="anonymous"></script>
      <script
    src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
